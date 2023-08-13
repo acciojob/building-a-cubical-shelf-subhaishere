@@ -1,10 +1,9 @@
 /*  your css code here. If applicable */
 .shelf {
-  position: relative;
   width: 200px;
   height: 200px;
-  transform-style: preserve-3d;
-  transform: rotateX(30deg) rotateY(45deg);
+  perspective: 600px;
+  position: relative;
 }
 
 .face {
@@ -19,7 +18,7 @@
 }
 
 .back {
-  transform: translateZ(-100px);
+  transform: rotateY(180deg) translateZ(100px);
 }
 
 .left {
